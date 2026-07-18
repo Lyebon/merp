@@ -20,6 +20,8 @@ class Dice_function:
     
     def dice_try(self, dice: Dice, num: int) -> int:
         self.result = 0
-        for i in range(0, num):
-            self.result += self.dice_roll(dice.value)
+        i = 0
+        while i<num:
+            self.result += self.dice_roll(dice)
+            i += 1
         return self.result

@@ -1,12 +1,23 @@
 from enum import Enum
 
 class Characteristics(Enum):
-    strengt = "str"
-    agility = "agi"
-    constitution = "con"
-    intelligence = "int"
-    intuition = "i"
-    precense = "pre"
+    strng = "str"
+    agi = "agi"
+    con = "con"
+    int = "int"
+    i = "i"
+    pre = "pre"
+
+class Bonif(Enum):
+    plus35 = 35
+    plus30 = 30
+    plus25 = 25
+    plus20 = 20
+    plus15 = 15
+    plus10 = 10
+    plus5 = 5
+    plus0 = 0
+
 
 class Stats_char():
     def __init__(self):
@@ -17,24 +28,31 @@ class Stats_char():
         self.intuition = None
         self.precense = None
 
+        self.bonif_strengt = None
+        self.bonif_agility = None
+        self.bonif_constitution = None
+        self.bonif_intelligence = None
+        self.bonif_intuition = None
+        self.bonif_precense = None
+
     
-    @staticmethod
-    def from_dict(self, stats_roll):
-        for stat in stats_roll:
-            if stats_roll[stat] == None:
+    def from_dict(self, stats_roll: dict[str:int]):
+        for stat, value in stats_roll.items():
+            if value == None:
                 return f"The {stat} is empty"
             match stat:
-                case "str":
-                    self.strengt = stats_roll[stat]
-                case "agi":
-                    self.agility = stats_roll[stat]
-                case "con":
-                    self.constitution = stats_roll[stat]
-                case "int":
-                    self.intelligence = stats_roll[stat]
-                case "i":
-                    self.intuition = stats_roll[stat]
-                case "pre":
-                    self.precense = stats_roll[stat]
+                case Characteristics.strng:
+                    self.strengt = value
+                case Characteristics.agi:
+                    self.agility = value
+                case Characteristics.con:
+                    self.constitution = value
+                case Characteristics.int:
+                    self.intelligence = value
+                case Characteristics.i:
+                    self.intuition = value
+                case Characteristics.pre:
+                    self.precense = value
                 case _:
-                    return "The caracteristics have wrong or extra data!"
+                    return f"Unexpected stat: {stat}"
+                
