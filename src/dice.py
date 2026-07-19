@@ -13,6 +13,7 @@ class Dice(Enum):
 class Dice_function:
     def __init__(self):
         self.result = 0
+        self.dice_list = []
 
     @staticmethod
     def dice_roll(dice: Dice) -> int:
@@ -20,8 +21,9 @@ class Dice_function:
     
     def dice_try(self, dice: Dice, num: int) -> int:
         self.result = 0
-        i = 0
-        while i<num:
-            self.result += self.dice_roll(dice)
-            i += 1
+        self.dice_list = []
+        for i in range(0, num):
+            throw = self.dice_roll(dice)
+            self.result += throw
+            self.dice_list.append(throw)
         return self.result
