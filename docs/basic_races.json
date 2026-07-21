@@ -1,0 +1,57 @@
+{
+
+    "hobbits":{
+        "hobbit": {"characteristics":{"strength":-20, "agility":15, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
+            "magic_tr":{"ese":50, "can":20, "ve":30, "enf":15}
+        }
+    },
+
+    "dwarves":{
+        "umly":{"characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":-5, "precense":-5},
+            "magic_tr":{"ese":20, "can":0, "ve":5, "enf":5}
+        },
+        "dwarfs":{"characteristics":{"strength":5, "agility":-5, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
+            "magic_tr":{"ese":40, "can":0, "ve":10, "enf":10}
+        }
+    },
+
+    "elf":{
+        "half elf":{"characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "precense":5},
+            "magic_tr":{"ese":0, "can":0, "ve":5, "enf":50}
+        },
+        "silvano":{"characteristics":{"strength":0, "agility":10, "constitution":0, "intelligence":0, "intuition":5, "precense":5},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
+        },
+        "sindar":{"characteristics":{"strength":0, "agility":10, "constitution":5, "intelligence":0, "intuition":5, "precense":10},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
+        },
+        "noldor":{"characteristics":{"strength":0, "agility":15, "constitution":10, "intelligence":5, "intuition":5, "precense":15},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
+        }
+    },
+
+    "orc":{
+        "halforc":{"characteristics":{"strength":5, "agility":0, "constitution":5, "intelligence":0, "intuition":0, "precense":-5},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":0}
+            },
+        "common":{"characteristics":{"strength":5, "agility":-5, "constitution":15, "intelligence":-10, "intuition":-10, "precense":-10},
+            "magic_tr":{"ese":0, "can":0, "ve":20, "enf":5}
+            },
+        "urukhai":{"characteristics":{"strength":10, "agility":0, "constitution":20, "intelligence":0, "intuition":-5, "precense":-10},
+            "magic_tr":{"ese":0, "can":0, "ve":20, "enf":5}
+            }
+    },
+
+    "troll":{
+        "halftroll":{"characteristics":{"strength":10, "agility":-5, "constitution":10, "intelligence":-5, "intuition":-5, "precense":-5},
+            "magic_tr":{"ese":0, "can":0, "ve":15, "enf":5}
+            },
+        "common":{"characteristics":{"strength":15, "agility":-10, "constitution":15, "intelligence":-15, "intuition":-15, "precense":-10},
+            "magic_tr":{"ese":0, "can":0, "ve":30, "enf":10}
+            },
+        "ologhai":{"characteristics":{"strength":20, "agility":-5, "constitution":15, "intelligence":-5, "intuition":-10, "precense":-10},
+            "magic_tr":{"ese":0, "can":0, "ve":20, "enf":10}
+            }
+        }
+
+}
