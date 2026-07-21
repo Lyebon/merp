@@ -1,0 +1,11 @@
+[
+  {"min": 1, "max": 3, "race": "hobbit"},
+  {"min": 4, "max": 8, "race": "umli"},
+  {"min": 9, "max": 21, "race": "dwarf"},
+  {"min": 22, "max": 25, "race": "wose"},
+  {"min": 26, "max": 75, "race": "human"},
+  {"min": 76, "max": 78, "race": "half_elf"},
+  {"min": 79, "max": 91, "race": "silvano"},
+  {"min": 92, "max": 97, "race": "sindar"},
+  {"min": 98, "max": 100, "race": "noldor"}
+]

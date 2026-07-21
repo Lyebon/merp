@@ -1,0 +1,16 @@
+[
+  {"min": 1, "max": 5, "race": "dunadan"},
+  {"min": 6, "max": 10, "race": "rohirrim"},
+  {"min": 11, "max": 15, "race": "beornida"},
+  {"min": 16, "max": 20, "race": "woodmen"},
+  {"min": 21, "max": 25, "race": "dorwinadan"},
+  {"min": 26, "max": 30, "race": "lossadan"},
+  {"min": 31, "max": 54, "race": "eriadorians"},
+  {"min": 55, "max": 78, "race": "bourgeois"},
+  {"min": 79, "max": 83, "race": "dunlendino"},
+  {"min": 84, "max": 86, "race": "easterlings"},
+  {"min": 87, "max": 89, "race": "haradan"},
+  {"min": 90, "max": 92, "race": "corsair"},
+  {"min": 93, "max": 95, "race": "variag"},
+  {"min": 96, "max": 100, "race": "black_numenoreans"}
+]
