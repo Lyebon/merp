@@ -1,11 +1,12 @@
-{
-    "human":{
-        
-        "common":{"characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
-            "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
-        },
-        "dunedain":{"characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":0, "precense":5},
+[    
+    {"min": 1, "max": 50, "info":{"race":"common", 
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+
+    {"min": 51, "max": 100, "info":{"race":"dunedain", "characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":0, "precense":5},
             "magic_tr":{"ese":0, "can":0, "ve":5, "enf":5}
         }
     }
-}
+]

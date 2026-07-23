@@ -1,34 +1,50 @@
 [
-  {"min": 1, "max": 3, "hobbit": {"characteristics":{"strength":-20, "agility":15, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
-            "magic_tr":{"ese":50, "can":20, "ve":30, "enf":15}
+  {"min": 1, "max": 3, "info":{"race": "hobbit",
+          "characteristics":{"strength":-20, "agility":15, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
+          "magic_tr":{"ese":50, "can":20, "ve":30, "enf":15}
+          }
+},
+
+  {"min": 4, "max": 8, "info":{"race": "umly",
+          "characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":-5, "precense":-5},
+          "magic_tr":{"ese":20, "can":0, "ve":5, "enf":5}
     }
   },
-  {"min": 4, "max": 8, "umly":{"characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":-5, "precense":-5},
-            "magic_tr":{"ese":20, "can":0, "ve":5, "enf":5}
+
+  {"min": 9, "max": 21, "info":{"race": "dwarf",
+          "characteristics":{"strength":5, "agility":-5, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
+          "magic_tr":{"ese":40, "can":0, "ve":10, "enf":10}
     }
   },
-  {"min": 9, "max": 21, "dwarf":{"characteristics":{"strength":5, "agility":-5, "constitution":15, "intelligence":0, "intuition":-5, "precense":-5},
-            "magic_tr":{"ese":40, "can":0, "ve":10, "enf":10}
-    }
-  },
-  {"min": 22, "max": 25, "wose":{"characteristics":{"strength":0, "agility":0, "constitution":5, "intelligence":0, "intuition":0, "precense":-5},
+
+  {"min": 22, "max": 25, "info":{"race":"wose", 
+            "characteristics":{"strength":0, "agility":0, "constitution":5, "intelligence":0, "intuition":0, "precense":-5},
             "magic_tr":{"ese":20, "can":0, "ve":0, "enf":0}
     }
   },
+
   {"min": 26, "max": 75, "race": "human"},
-  {"min": 76, "max": 78, "half_elf":{"characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "precense":5},
+
+  {"min": 76, "max": 78, "info":{"race": "half_elf", 
+            "characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "precense":5},
             "magic_tr":{"ese":0, "can":0, "ve":5, "enf":50}
     }
   },
-  {"min": 79, "max": 91, "silvano":{"characteristics":{"strength":0, "agility":10, "constitution":0, "intelligence":0, "intuition":5, "precense":5},
+
+  {"min": 79, "max": 91, "info":{"race": "silvano", 
+            "characteristics":{"strength":0, "agility":10, "constitution":0, "intelligence":0, "intuition":5, "precense":5},
             "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
     }
   },
-  {"min": 92, "max": 97, "sindar":{"characteristics":{"strength":0, "agility":10, "constitution":5, "intelligence":0, "intuition":5, "precense":10},
+
+  {"min": 92, "max": 97, "info":{"race": "sindar",
+            "characteristics":{"strength":0, "agility":10, "constitution":5, "intelligence":0, "intuition":5, "precense":10},
             "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
     }
   },
-  {"min": 98, "max": 100, "noldor":{"characteristics":{"strength":0, "agility":15, "constitution":10, "intelligence":5, "intuition":5, "precense":15},
+  
+  {"min": 98, "max": 100, "info":{"race": "noldor",
+            "characteristics":{"strength":0, "agility":15, "constitution":10, "intelligence":5, "intuition":5, "precense":15},
             "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
     }
   }
