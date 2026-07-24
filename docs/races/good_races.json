@@ -23,7 +23,7 @@
     }
   },
 
-  {"min": 26, "max": 75, "race": "human"},
+  {"min": 26, "max": 75, "info": "human"},
 
   {"min": 76, "max": 78, "info":{"race": "half_elf", 
             "characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "precense":5},

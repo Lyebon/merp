@@ -19,7 +19,7 @@ class Dice_function:
     def dice_roll(dice: Dice) -> int:
         return randint(1, dice.value)
     
-    def dice_try(self, dice: Dice, num: int, all: bool) -> int:
+    def dice_try(self, dice: Dice, num: int, all=False) -> int | list[int]:
         self.result = 0
         self.dice_list = []
         for i in range(0, num):
