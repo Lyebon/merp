@@ -1,14 +1,4 @@
 from random import randint
-from enum import Enum
-
-class Dice(Enum):
-    d4 = 4
-    d6 = 6
-    d8 = 8
-    d10 = 10
-    d12 = 12
-    d20 = 20
-    d100 = 100
 
 class Dice_function:
     def __init__(self):
@@ -16,10 +6,10 @@ class Dice_function:
         self.dice_list = []
 
     @staticmethod
-    def dice_roll(dice: Dice) -> int:
-        return randint(1, dice.value)
+    def dice_roll(dice: int) -> int:
+        return randint(1, dice)
     
-    def dice_try(self, dice: Dice, num: int, all=False) -> int | list[int]:
+    def dice_try(self, dice: int, num: int, all=False) -> int | list[int]:
         self.result = 0
         self.dice_list = []
         for i in range(0, num):

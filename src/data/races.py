@@ -2,10 +2,15 @@ from src.data_loader import read_file
 from src.utility import d100_check
 from src.engine.characteristics import RaceStats
 from pathlib import Path
+from dataclasses import dataclass
 
+@dataclass
 class Race:
-    def __init__(self):
-        self.race = None
+    race:str
+    bonus_char:dict
+    adolecence:dict
+    magic_mod:dict
+
 
     def good_creator(self):
         table = read_file(Path('./docs/races/good_races.json'))
@@ -14,5 +19,6 @@ class Race:
         if race_mod == "human":
             race_mod = d100_check(hum_table)
         self.race = race_mod.get("race")
-        bonus_char = race_mod.get("characteristics") # Push to characteristic module
-        RaceStats.race_bonus(bonus_char)
+        self.bonus_char = race_mod.get("characteristics") # Push to characteristic module
+        # self.adolecence = race_mod.get("ability")
+        # self.magic_mod = race_mod.get("magic_tr")
