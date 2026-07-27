@@ -12,7 +12,7 @@ def basic_ran_creator():
     prof.get_proffesion()
     pj.profession = prof
     char = Stats()
-    char.characteristic_build(Profession.primary_char)
+    char.characteristic_build(Profession.primary_char, race.bonus_char)
     pj.characteristics = char
 
     

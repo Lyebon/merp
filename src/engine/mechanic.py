@@ -28,6 +28,7 @@ class Bonus(Enum):
     plus_5 = 5
     plus_2 = 2
     plus_1 = 1
+    plus_0 = 0
 
 def d100_check(table:list[dict], roll) -> dict:
     for r_table in table:
