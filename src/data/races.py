@@ -7,9 +7,10 @@ from dataclasses import dataclass
 @dataclass
 class Race:
     race:str
-    bonus_char:dict
-    adolecence:dict
-    magic_mod:dict
+    bonus_char:dict # Characteristics
+    adolecence:dict # Abilities
+    magic_mod:dict # Magic
+    history_points:int
 
 
     def good_creator(self):
@@ -19,6 +20,7 @@ class Race:
         if race_mod == "human":
             race_mod = d100_check(hum_table)
         self.race = race_mod.get("race")
-        self.bonus_char = race_mod.get("characteristics") # Push to characteristic module
+        self.bonus_char = race_mod.get("characteristics")
+        self.magic_mod = race_mod.get("magic_tr")
         # self.adolecence = race_mod.get("ability")
-        # self.magic_mod = race_mod.get("magic_tr")
+        # self.history_points = race_mod.get("history")

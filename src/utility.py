@@ -1,4 +1,4 @@
-from src.engine.dice import Dice_function
+from src.engine.dice_roll import dice_roll
 from enum import Enum
 
 class Dice(Enum):
@@ -10,7 +10,7 @@ class Dice(Enum):
     d20 = 20
     d100 = 100
 
-class Stats_name(Enum):
+class StatsName(Enum):
     strength = "strength"
     agility = "agility"
     constitution = "constitution"
@@ -20,9 +20,17 @@ class Stats_name(Enum):
 
 class Bonus(Enum):
     plus_35 = 35
+    plus_30 = 30
+    plus_25 = 25
+    plus_20 = 20
+    plus_15 = 15
+    plus_10 = 10
+    plus_5 = 5
+    plus_2 = 2
+    plus_1 = 1
 
 def d100_check(table:list[dict]) -> dict:
-    roll = Dice_function.dice_roll(Dice.d100.value)
+    roll = dice_roll(Dice.d100.value)
     for r_table in table:
         if r_table["min"] <= roll <= r_table["max"]:
             return r_table["info"]
