@@ -4,9 +4,73 @@
                         "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
         }
     },
-
-    {"min": 51, "max": 100, "info":{"race":"dunedain", "characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":0, "precense":5},
-            "magic_tr":{"ese":0, "can":0, "ve":5, "enf":5}
+    {"min": 1, "max": 5, "info":{"race":"dunedain", "characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":0, "precense":5},
+                                "magic_tr":{"ese":0, "can":0, "ve":5, "enf":5}
+        }
+    },
+    {"min": 6, "max": 10, "info":{"race": "rohirrim",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 11, "max": 15, "info":{"race": "beornida",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 16, "max": 20, "info":{"race": "woodmen",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 21, "max": 25, "info":{"race": "dorwinadan",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 26, "max": 30, "info":{"race": "lossadan",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 31, "max": 54, "info":{"race": "eriadorians",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 55, "max": 78, "info":{"race": "bourgeois",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 79, "max": 83, "info":{"race": "dunlendino",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 84, "max": 86, "info":{"race": "easterlings",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 87, "max": 89, "info":{"race": "haradan",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 90, "max": 92, "info":{"race": "corsair",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 93, "max": 95, "info":{"race": "variag",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
+        }
+    },
+    {"min": 96, "max": 100, "info":{"race": "black_numenoreans",
+                        "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
+                        "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
         }
     }
 ]

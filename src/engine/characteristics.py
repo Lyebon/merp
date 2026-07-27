@@ -1,6 +1,6 @@
-from src.utility import StatsName, Bonus
+from src.engine.mechanic import StatsName, Bonus
 from dataclasses import dataclass
-from utility import d100_roll
+from src.engine.mechanic import d100_roll
 
 @dataclass
 class Stat:

@@ -1,7 +1,7 @@
 from enum import Enum
 from dataclasses import dataclass
 from src.engine.dice_roll import dice_roll
-from utility import Dice, StatsName
+from src.engine.mechanic import Dice, StatsName
 from src.data_loader import read_file
 from pathlib import Path
 

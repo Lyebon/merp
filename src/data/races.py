@@ -1,6 +1,5 @@
 from src.data_loader import read_file
-from src.utility import d100_check
-from src.engine.characteristics import RaceStats
+from src.engine.mechanic import d100_check
 from pathlib import Path
 from dataclasses import dataclass
 
@@ -14,7 +13,7 @@ class Race:
 
 
     def good_creator(self):
-        table = read_file(Path('./docs/races/good_races.json'))
+        table = read_file(Path('./docs/races/ally_races.json'))
         hum_table = read_file(Path('./docs/races/human_races.json'))
         race_mod = d100_check(table)    # race is a dictionary with all the pertinent data about char, ability and else
         if race_mod == "human":
