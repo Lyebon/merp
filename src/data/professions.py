@@ -25,3 +25,6 @@ class Profession:
         roll = dice_roll(Dice.d6)
         self.profession = (Professions)[roll-1]
         table = read_file(Path('./docs/profession.json'))
+        table = table.get(self.profession)
+        self.primary_char = table.get("primary")
+        #self.lvl_up_aby = table.get("progresion")

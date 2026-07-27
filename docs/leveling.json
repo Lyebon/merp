@@ -1,0 +1,62 @@
+{
+  "warrior": {
+    "movement_and_maneuvering": 3,
+    "weapon_skills": 5,
+    "general_skills": 2,
+    "subterfuge_skills": 2,
+    "magic_skills": 0,
+    "body_development": 3,
+    "languages": 0,
+    "spell_lists": 0
+  },
+  "mage": {
+    "movement_and_maneuvering": 0,
+    "weapon_skills": 0,
+    "general_skills": 2,
+    "subterfuge_skills": 0,
+    "magic_skills": 5,
+    "body_development": 1,
+    "languages": 2,
+    "spell_lists": 5
+  },
+  "animist": {
+    "movement_and_maneuvering": 1,
+    "weapon_skills": 1,
+    "general_skills": 2,
+    "subterfuge_skills": 1,
+    "magic_skills": 2,
+    "body_development": 1,
+    "languages": 2,
+    "spell_lists": 5
+  },
+  "scout": {
+    "movement_and_maneuvering": 1,
+    "weapon_skills": 3,
+    "general_skills": 3,
+    "subterfuge_skills": 5,
+    "magic_skills": 0,
+    "body_development": 2,
+    "languages": 1,
+    "spell_lists": 0
+  },
+  "ranger": {
+    "movement_and_maneuvering": 2,
+    "weapon_skills": 3,
+    "general_skills": 4,
+    "subterfuge_skills": 2,
+    "magic_skills": 0,
+    "body_development": 2,
+    "languages": 1,
+    "spell_lists": 1
+  },
+  "bard": {
+    "movement_and_maneuvering": 0,
+    "weapon_skills": 2,
+    "general_skills": 2,
+    "subterfuge_skills": 2,
+    "magic_skills": 3,
+    "body_development": 1,
+    "languages": 3,
+    "spell_lists": 2
+  }
+}

@@ -1,18 +1,30 @@
-from src.utility import Stats_name, Bonus
+from src.utility import StatsName, Bonus
 from dataclasses import dataclass
+from utility import d100_roll
 
 @dataclass
 class Stat:
     roll:int
-    bonus:int
+    race_bonus:int
     r_bonus:int = 0
 
 @dataclass
 class Stats:
-    characteristic:dict[Stats_name: Stat]
+    characteristic:dict[StatsName: Stat]
 
-    def characteristic_build(self):
-        pass
+    def characteristic_build(self, primary, race_bon):
+        char = {}
+        for stat in StatsName:
+            info = Stat()
+            if stat.value == primary:
+                info.roll = 90
+                info.race_bonus = self.char_set_bonus(race_bon)
+                char[stat] = info
+            else:
+                info.roll = d100_roll()
+                char[stat] = info
+        self.characteristic = char
+
 
     def char_set_bonus(self):
         pass

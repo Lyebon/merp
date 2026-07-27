@@ -29,9 +29,13 @@ class Bonus(Enum):
     plus_2 = 2
     plus_1 = 1
 
-def d100_check(table:list[dict]) -> dict:
-    roll = dice_roll(Dice.d100.value)
+def d100_check(table:list[dict], roll) -> dict:
     for r_table in table:
         if r_table["min"] <= roll <= r_table["max"]:
             return r_table["info"]
 
+def d100_roll()->int:
+    return dice_roll(Dice.d100)
+
+def d6_roll()->int:
+    return dice_roll(Dice.d6)

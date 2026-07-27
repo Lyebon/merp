@@ -1,0 +1,71 @@
+[
+    {"warrior":{
+        "primary": "strength",
+        "profession_bonuses": {
+        "weapons": 3,
+        "general": 1,
+        "body_development": 2
+        },
+        "spell_restrictions": "Can learn open lists of one realm (chosen by the player). Can only cast spells of level 1, 2 and 3."
+        }
+    },
+    {"scout":{
+        "primary": "agility",
+        "profession_bonuses": {
+        "weapons": 1,
+        "general": 1,
+        "subterfuge": 2,
+        "perception": 3
+        },
+        "spell_restrictions": "Can learn open lists from one realm (chosen by the player). Can only cast spells of level 1, 2, 3, 4 and 5."
+        }
+    },
+    {"ranger": {
+        "primary": "constitution",
+        "profession_bonuses": {
+        "weapons": 2,
+        "general": 3,
+        "perception": 2,
+        "stalk_hide": 2
+        },
+        "spell_restrictions": "Can learn open lists of Channeling spells and ranger spell lists, however can only cast spells of level 1, 2, 3, 4 and 5 from the open Channeling lists (no limit on their ranger lists)."
+    }
+    },
+    {"mage":{
+        "primary": "intelligence",
+        "profession_bonuses": {
+        "rune_reading": 2,
+        "item_use": 2,
+        "directed_spell_attacks": 3,
+        "basic_spell_attacks": 2
+        },
+        "spell_restrictions": "Can learn open lists of Essence spells and mage spell lists."
+        }
+    },
+    {"animist":{
+        "primary": "intuition",
+        "profession_bonuses": {
+        "rune_reading": 1,
+        "item_use": 1,
+        "general": 1,
+        "directed_spell_attacks": 2,
+        "basic_spell_attacks": 2,
+        "perception": 1
+        },
+        "spell_restrictions": "Can learn open lists of Channeling spells and animist spell lists."
+        }
+    },
+    {"bard":{
+        "primary": "presence",
+        "profession_bonuses": {
+        "weapons": 1,
+        "general": 1,
+        "subterfuge": 1,
+        "magic": 1,
+        "basic_spell_attacks": 1,
+        "perception": 1
+        },
+        "spell_restrictions": "Can learn open lists of Essence spells and bard spell lists. However, can only cast spells of level 1, 2, 3, 4 and 5 from the open Essence lists (no limit on the open bard lists)."
+        }
+    }
+]
