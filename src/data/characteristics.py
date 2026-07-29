@@ -1,39 +1,39 @@
 from src.data.data import StatsName, Bonus
 from dataclasses import dataclass
 
-@dataclass
+
 class Stat:
-    roll:int
-    race_bonus:Bonus
-    roll_bonus:Bonus
-    total:int
-
-@dataclass
-class Stats:
-    characteristic:dict[StatsName: Stat]
-
-    def characteristic_build(self):
-        pass
+    def __init__(self, roll, race_bonus):
+        self.roll:int = roll
+        self.race_bonus:Bonus = race_bonus
+        self.roll_bonus:Bonus = self.char_set_bonus()
+        self.total:int = self.bonus_calculation()
 
 
-    def char_set_bonus(self, stat:Stat)->Bonus:
-        if stat.roll == 102:
+    def char_set_bonus(self)->Bonus:
+        if self.roll == 102:
             return Bonus.plus_35
-        elif stat.roll == 101:
+        elif self.roll == 101:
             return Bonus.plus_30
-        elif stat.roll == 100:
+        elif self.roll == 100:
             return Bonus.plus_25
-        elif 98 <= stat.roll <= 99:
+        elif 98 <= self.roll <= 99:
             return Bonus.plus_20
-        elif 95 <= stat.roll <= 97:
+        elif 95 <= self.roll <= 97:
             return Bonus.plus_15
-        elif 90 <= stat.roll <= 94:
+        elif 90 <= self.roll <= 94:
             return Bonus.plus_10
-        elif 75<= stat.roll <= 89:
+        elif 75<= self.roll <= 89:
             return Bonus.plus_5
         else:
             return Bonus.plus_0
 
+    def bonus_calculation(self)->int:
+        return self.race_bonus.value + self.roll_bonus.value
 
-    def bonus_calculation(self, a:Bonus, b:Bonus)->int:
-        return a.value + b.value
+    def __repr__(self):
+       return f"roll: {self.roll}\nRoll bonus: {self.roll_bonus.value}\nRace bonus: {self.race_bonus.value}\nTotal bonus: {self.total}\n"
+
+@dataclass
+class Stats:
+    characteristic:dict[StatsName: Stat] = None
