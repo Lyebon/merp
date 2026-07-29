@@ -1,11 +1,10 @@
 from dataclasses import dataclass
-from professions import Profession
-from src.engine.characteristics import Stats
+from data.characteristics import Stats
 
 @dataclass
 class Character():
     name: str
     race: str
-    profession: Profession
+    profession:str
     characteristics: Stats
 
