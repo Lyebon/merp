@@ -32,8 +32,4 @@ class Stat:
         return self.race_bonus.value + self.roll_bonus.value
 
     def __repr__(self):
-       return f"roll: {self.roll}\nRoll bonus: {self.roll_bonus.value}\nRace bonus: {self.race_bonus.value}\nTotal bonus: {self.total}\n"
-
-@dataclass
-class Stats:
-    characteristic:dict[StatsName: Stat] = None
+       return f"\nroll: {self.roll}\nRoll bonus: {self.roll_bonus.value}\nRace bonus: {self.race_bonus.value}\nTotal bonus: {self.total}\n"

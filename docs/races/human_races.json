@@ -63,7 +63,7 @@
                         "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
         }
     },
-    {"min": 96, "max": 100, "info":{"race": "black_numenoreans",
+    {"min": 96, "max": 100, "info":{"race": "black numenoreans",
                         "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "precense":0},
                         "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0}
         }
