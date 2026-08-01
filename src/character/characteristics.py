@@ -1,5 +1,4 @@
-from src.data.data import StatsName, Bonus
-from dataclasses import dataclass
+from src.enums import StatsName, Bonus
 
 
 class Stat:

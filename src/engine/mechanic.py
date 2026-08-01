@@ -1,5 +1,5 @@
 from random import randint
-from src.data.data import Dice
+from src.enums import Dice
 
 def range_checker(table:list[dict], roll) -> dict:
     for r_table in table:

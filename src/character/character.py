@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from src.data.data import StatsName
-from src.engine.characteristics import Stat
+from src.enums import StatsName
+from character.characteristics import Stat
 
 @dataclass
 class Character():
