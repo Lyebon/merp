@@ -1,66 +1,70 @@
 from enum import Enum
 
 class Dice(Enum):
-    d4 = 4
-    d6 = 6
-    d8 = 8
-    d10 = 10
-    d12 = 12
-    d20 = 20
-    d100 = 100
+    D4 = 4
+    D6 = 6
+    D8 = 8
+    D10 = 10
+    D12 = 12
+    D20 = 20
+    D100 = 100
 
 class AllyRaces(Enum):
-    hobbit = "hobbit"
-    umly = "umly"
-    dwarf = "dwarf"
-    wose = "wose"
-    human = "human"
-    half_elf = "half elf"
-    silvano = "silvano"
-    sindar = "sindar"
-    noldor = "noldor"
+    HOBBIT = "hobbit"
+    UMLY = "umly"
+    DWARF = "dwarf"
+    WOSE = "wose"
+    HUMAN = "human"
+    HALF_ELF = "half elf"
+    SILVANO = "silvano"
+    SINDAR = "sindar"
+    NOLDOR = "noldor"
 
 class HumanRaces(Enum):
-    dunedain = "dunedain"
-    rohirrim = "rohirrim"
-    beornida = "beornida"
-    woodmen = "woodmen"
-    dorwinadan = "dorwinadan"
-    lossadan = "lossadan"
-    eriadorians = "eriadorians"
-    bourgeois = "bourgeois"
-    dunlendino = "dunlendino"
-    easterlings = "easterlings"
-    haradan = "haradan"
-    corsair = "corsair"
-    variag = "variag"
-    black_numenoreans = "black numenoreans"
+    DUNEDAIN = "dunedain"
+    ROHIRRIM = "rohirrim"
+    BEORNIDA = "beornida"
+    WOODMEN = "woodmen"
+    DORWINADAN = "dorwinadan"
+    LOSSADAN = "lossadan"
+    ERIADORIANS = "eriadorians"
+    BOURGEOIS = "bourgeois"
+    DUNLENDINO = "dunlendino"
+    EASTERLINGS = "easterlings"
+    HARADAN = "haradan"
+    CORSAIR = "corsair"
+    VARIAG = "variag"
+    BLACK_NUMENOREANS = "black numenoreans"
 
 class Professions(Enum):
-    warrior = "warrior"
-    scout = "scout"
-    ranger = "ranger"
-    mage = "mage"
-    animist = "animist"
-    bard = "bard"
+    WARRIOR = "warrior"
+    SCOUT = "scout"
+    RANGER = "ranger"
+    MAGE = "mage"
+    ANIMIST = "animist"
+    BARD = "bard"
 
 
 class StatsName(Enum):
-    strength = "strength"
-    agility = "agility"
-    constitution = "constitution"
-    intelligence = "intelligence"
-    intuition = "intuition"
-    presence = "presence"
+    STRENGTH = "strength"
+    AGILITY = "agility"
+    CONSTITUTION = "constitution"
+    INTELLIGENCE = "intelligence"
+    INTUITION = "intuition"
+    PRESENCE = "presence"
 
 class Bonus(Enum):
-    plus_35 = 35
-    plus_30 = 30
-    plus_25 = 25
-    plus_20 = 20
-    plus_15 = 15
-    plus_10 = 10
-    plus_5 = 5
-    plus_2 = 2
-    plus_1 = 1
-    plus_0 = 0
+    PLUS_35 = 35
+    PLUS_30 = 30
+    PLUS_25 = 25
+    PLUS_20 = 20
+    PLUS_15 = 15
+    PLUS_10 = 10
+    PLUS_5 = 5
+    PLUS_2 = 2
+    PLUS_1 = 1
+    CERO = 0
+    MINUS_5 = -5
+    MINUS_10 = -10
+    MINUS_15 = -15
+    MINUS_20 = -20
