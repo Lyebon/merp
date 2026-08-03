@@ -1,5 +1,5 @@
 from src.character.character import Character
-from src.enums import Dice, StatsName, Professions, Bonus
+from src.enums import Dice, StatsName, Professions, Bonus, AllyRaces, HumanRaces
 from src.character.characteristics import Stat
 from src.engine.mechanic import dice_roll, range_checker
 from src.data_loader import read_file
@@ -7,26 +7,19 @@ from pathlib import Path
 
 
 def good_creator() -> Character:
-    character = {}
     pass
-    
 
+def race_selector():
+    file = read_file(Path("/src/data/races/ally_races.json"))
+    race = range_checker(file, dice_roll(Dice.D100))
+    if race.get("race") == "human":
+        file = read_file(Path("/src/data/races/human_races.json"))
+        race = range_checker(file, dice_roll(Dice.D100))
+        
 
-def race_selector() -> dict[str:dict]:
-    roll = dice_roll(Dice.D100)
-    races = read_file(Path("src/data/races/ally_races.json"))
-    race = range_checker(races, roll)
-    if races == "human":
-        roll = dice_roll(Dice.D100)
-        races = read_file(Path("src/data/races/human_races.json"))
-        race = range_checker(races, roll)
-    return race
 
 def profession_selector() -> dict[Professions:dict]:
-    roll = dice_roll(Dice.D6)
-    profession = list(Professions)[roll-1]
-    table = read_file(Path("src/data/professions.json"))
-    return {profession:table[profession.value]}
+    pass
 
 def characteristics_setup(primary:str, race_bonus:dict[StatsName:Bonus]) -> dict[StatsName:Stat]:
     characteristics = {}

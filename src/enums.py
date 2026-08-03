@@ -63,7 +63,7 @@ class Bonus(Enum):
     PLUS_5 = 5
     PLUS_2 = 2
     PLUS_1 = 1
-    CERO = 0
+    ZERO = 0
     MINUS_5 = -5
     MINUS_10 = -10
     MINUS_15 = -15
