@@ -1,8 +1,8 @@
 from data_loader import read_file
-from src.dice import dice
+from dice import dice
 
 def profession_select(option:int)-> dict | str:
-    table = read_file("./data/professions.json")
+    table = read_file("src/data/professions.json")
     if option == 7:
         option = dice(6)
     match option:
@@ -22,9 +22,9 @@ def profession_select(option:int)-> dict | str:
             return "Select a valid option"
 
 def race_selector(option: int) -> dict | str:
-    table = read_file("./data/races/ally_races.json")
+    table = read_file("src/data/races/ally_races.json")
     if option == 10:
-        option = random_race_selector(dice(100), table)
+        option = random_race_selector(dice(100), table.get("table"))
         if option == 5:
             return  human_race_selector(15)
     match option:
@@ -37,7 +37,7 @@ def race_selector(option: int) -> dict | str:
         case 4:
             return table.get("wose")
         case 5:
-            return "human"
+            return table.get("human")
         case 6:
             return table.get("half elf")
         case 7:
@@ -50,9 +50,9 @@ def race_selector(option: int) -> dict | str:
             return "Select a valid option"
 
 def human_race_selector(option:int)->dict | str:
-    table = read_file("./data/races/human_races.json")
+    table = read_file("src/data/races/human_races.json")
     if option == 15:
-        option = random_race_selector(dice(100), table)
+        option = random_race_selector(dice(100), table.get("table"))
     match option:
         case 1:
             return table.get("dunedain")
@@ -85,10 +85,10 @@ def human_race_selector(option:int)->dict | str:
         case _:
             return "Select a valid option"
 
-def random_race_selector(roll:int, table:dict)->int:
-    for min, max, race in table:
-        if min >= roll >= max:
-            return race
+def random_race_selector(roll:int, table:list)->int:
+    for case in table:
+        if case["min"] >= roll >= case["max"]:
+            return case["race"]
 
 def alignment_selector(option:int) -> str:
     if option == 10:

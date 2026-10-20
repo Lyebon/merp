@@ -1,0 +1,236 @@
+{
+  "table":[{"min": 1, "max": 5, "race": 1}, {"min": 6, "max": 10, "race": 2},
+  {"min": 11, "max": 15, "race": 3}, {"min": 16, "max": 20, "race": 4},
+  {"min": 21, "max": 25, "race": 5}, {"min": 26, "max": 30, "race": 6},
+  {"min": 31, "max": 54, "race": 7}, {"min": 55, "max": 78, "race": 8},
+  {"min": 79, "max": 83, "race": 9}, {"min": 84, "max": 86, "race": 10},
+  {"min": 87, "max": 89, "race": 11}, {"min": 90, "max": 92, "race": 12},
+  {"min": 93, "max": 95, "race": 13}, {"min": 96, "max": 100, "race": 14}
+  ],
+
+"dunedain":{
+    "characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":0, "presence":5},
+    "magic_tr":{"ese":0, "can":0, "ve":5, "enf":5},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cota_de_malla": 2,
+        "de_filo": 2,
+        "a_dos_manos": 1,
+        "proyectiles": 1,
+        "armas_de_asta": 1,
+        "montar": 1,
+        "nadar": 1,
+        "leer_runas": 1,
+        "usar_objetos": 1,
+        "desarrollo_fisico": 3
+        }
+    },
+
+"rohirrim":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero_endurecido": 1,
+        "cota_de_malla": 2,
+        "de_filo": 2,
+        "proyectiles": 1,
+        "armas_de_asta": 1,
+        "montar": 8,
+        "nadar": 1,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"beornida":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "a_dos_manos": 1,
+        "arrojadizas": 1,
+        "armas_de_asta": 2,
+        "nadar": 2,
+        "acechar_esconder": 4,
+        "desarrollo_fisico": 3,
+        "percepcion": 1
+        }
+    },
+
+"woodmen":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero": 1,
+        "de_filo": 1,
+        "arrojadizas": 1,
+        "armas_de_asta": 1,
+        "trepar": 3,
+        "nadar": 1,
+        "acechar_esconder": 4,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"dorwinadan":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence":{
+        "sin_armadura": 1,
+        "cuero_endurecido": 1,
+        "contundentes": 1,
+        "arrojadizas": 1,
+        "proyectiles": 1,
+        "armas_de_asta": 1,
+        "montar": 2,
+        "nadar": 1,
+        "desarrollo_fisico": 1
+        }
+    },
+
+"lossadan":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero": 3,
+        "arrojadizas": 3,
+        "nadar": 2,
+        "acechar_esconder": 4,
+        "desarrollo_fisico": 3,
+        "percepcion": 1
+        }
+    },
+
+"eriadorians":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero": 1,
+        "cuero_endurecido": 1,
+        "cota_de_malla": 1,
+        "de_filo": 1,
+        "arrojadizas": 1,
+        "proyectiles": 1,
+        "armas_de_asta": 1,
+        "nadar": 1,
+        "acechar_esconder": 1,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"bourgeois":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "de_filo": 1,
+        "proyectiles": 1,
+        "leer_runas": 1,
+        "usar_objetos": 1,
+        "desarrollo_fisico": 1,
+        "percepcion": 1
+        }
+    },
+
+"dunlendino":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero_endurecido": 1,
+        "contundentes": 1,
+        "arrojadizas": 2,
+        "proyectiles": 1,
+        "armas_de_asta": 2,
+        "trepar": 5,
+        "nadar": 1,
+        "acechar_esconder": 2,
+        "desarrollo_fisico": 3,
+        "percepcion": 1
+        }
+    },
+
+"easterlings":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "de_filo": 1,
+        "arrojadizas": 1,
+        "proyectiles": 2,
+        "armas_de_asta": 2,
+        "montar": 5,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"haradan":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero": 1,
+        "de_filo": 1,
+        "arrojadizas": 1,
+        "armas_de_asta": 2,
+        "montar": 7,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"corsair":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero_endurecido": 2,
+        "de_filo": 2,
+        "arrojadizas": 1,
+        "proyectiles": 1,
+        "nadar": 5,
+        "desarrollo_fisico": 2
+        }
+    },
+
+"variag":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cuero": 1,
+        "de_filo": 2,
+        "arrojadizas": 1,
+        "proyectiles": 1,
+        "armas_de_asta": 1,
+        "montar": 4,
+        "acechar_esconder": 1,
+        "desarrollo_fisico": 2,
+        "percepcion": 1
+        }
+    },
+
+"black numenoreans":{
+    "characteristics":{"strength":5, "agility":0, "constitution":0, "intelligence":0, "intuition":0, "presence":0},
+    "magic_tr":{"ese":0, "can":0, "ve":0, "enf":0},
+    "adolescence": {
+        "sin_armadura": 1,
+        "cota_de_malla": 2,
+        "de_filo": 1,
+        "arrojadizas": 1,
+        "proyectiles": 1,
+        "nadar": 3,
+        "montar": 1,
+        "leer_runas": 1,
+        "usar_objetos": 1,
+        "desarrollo_fisico": 2
+        }
+    }
+}

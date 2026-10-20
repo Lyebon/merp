@@ -1,14 +1,14 @@
-def welcome_menu() -> str:
-    return """\
+def welcome_menu() -> None:
+    print("""\
     Welcome to the MERP character creator
     Let's start!
 
    ==============
     Who are you?
-   =============="""
+   ==============""")
 
-def profession_menu() -> str:
-    return  """\
+def profession_menu() -> None:
+    print("""\
         Select your Profession
 
     1.Warrior
@@ -18,10 +18,10 @@ def profession_menu() -> str:
     5.Animist
     6.Bard
     7.Random
-"""
+""")
 
-def race_menu() -> str:
-   return """\
+def race_menu() -> None:
+   print("""\
         Select your race
 
     1.Hobbit
@@ -34,11 +34,11 @@ def race_menu() -> str:
     8.Sindar
     9.Noldor
     10.Random
-"""
+""")
         
 
-def human_race_menu() -> str:
-   return """\
+def human_race_menu() -> None:
+    print("""\
         Select your race
 
     1.Dunedain
@@ -56,10 +56,10 @@ def human_race_menu() -> str:
     13.Variag
     14.Black Numenoreans
     15.Random
-"""
+""")
 
-def alignment_menu() -> str:
-    return """\
+def alignment_menu() -> None:
+    print("""\
         Select your alignment
 
     1.Lawful Good
@@ -72,4 +72,4 @@ def alignment_menu() -> str:
     8.Chaotic Neutral
     9.Chaotic Evil
     10.Random
-"""
+""")

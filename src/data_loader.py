@@ -1,8 +1,7 @@
 import json
-from pathlib import Path
 
-def read_file(path_file: Path)->dict:
-    with path_file.open("r") as f:
+def read_file(path_file: str)->dict:
+    with open(path_file, "r") as f:
         file = json.load(f)
         return file
 

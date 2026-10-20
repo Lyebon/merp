@@ -1,0 +1,126 @@
+{
+  "table":[{"min": 1, "max": 3, "race":1},{"min": 4, "max": 8, "race": 2},
+  {"min": 9, "max": 21, "race": 3},{"min": 22, "max": 25, "race":4}, {"min": 26, "max": 75, "race": 5},
+  {"min": 76, "max": 78, "race": 6}, {"min": 79, "max": 91, "race": 7},
+  {"min": 92, "max": 97, "race": 8}, {"min": 98, "max": 100, "race": 9}
+  ],
+
+  "hobbit":{"characteristics":{"strength":-20, "agility":15, "constitution":15, "intelligence":0, "intuition":-5, "presence":-5},
+          "magic_tr":{"ese":50, "can":20, "ve":30, "enf":15},
+          "adolescence": {
+                "sin_armadura": 1,
+                "arrojadizas": 2,
+                "proyectiles": 2,
+                "trepar": 2,
+                "acechar_esconder": 5,
+                "abrir_cerraduras": 1,
+                "desactivar_trampas": 1,
+                "desarrollo_fisico": 2,
+                "percepcion": 4
+                }
+        },
+
+  "umly": {"characteristics":{"strength":5, "agility":0, "constitution":10, "intelligence":0, "intuition":-5, "presence":-5},
+          "magic_tr":{"ese":20, "can":0, "ve":5, "enf":5},
+          "adolescence": {
+                "sin_armadura": 1,
+                "cuero": 3,
+                "cuero_endurecido": 3,
+                "contundentes": 3,
+                "a_dos_manos": 1,
+                "arrojadizas": 1,
+                "nadar": 1,
+                "acechar_esconder": 1,
+                "desarrollo_fisico": 2,
+                "percepcion": 1
+                }
+        },
+
+  "dwarf":{"characteristics":{"strength":5, "agility":-5, "constitution":15, "intelligence":0, "intuition":-5, "presence":-5},
+          "magic_tr":{"ese":40, "can":0, "ve":10, "enf":10},
+          "adolescence": {
+                "sin_armadura": 1,
+                "cuero_endurecido": 1,
+                "cota_de_malla": 3,
+                "contundentes": 4,
+                "arrojadizas": 1,
+                "trepar": 1,
+                "abrir_cerraduras": 1,
+                "desactivar_trampas": 1,
+                "desarrollo_fisico": 3,
+                "percepcion": 2
+                }
+        },
+
+  "wose":{"characteristics":{"strength":0, "agility":0, "constitution":5, "intelligence":0, "intuition":0, "presence":-5},
+          "magic_tr":{"ese":20, "can":0, "ve":0, "enf":0},
+          "adolescence": {
+                "sin_armadura": 1,
+                "cuero": 3,
+                "de_filo": 2,
+                "arrojadizas": 4,
+                "armas_de_asta": 1,
+                "trepar": 3,
+                "nadar": 2,
+                "emboscar": 2,
+                "acechar_esconder": 4,
+                "desarrollo_fisico": 3,
+                "percepcion": 1
+                }
+        },
+
+  "half elf":{"characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "presence":5},
+            "magic_tr":{"ese":0, "can":0, "ve":5, "enf":50},
+            "adolescence": {
+                "sin_armadura": 1,
+                "cuero_endurecido": 1,
+                "cota_de_malla": 1,
+                "de_filo": 1,
+                "proyectiles": 2,
+                "trepar": 1,
+                "montar": 1,
+                "nadar": 1,
+                "acechar_esconder": 2,
+                "leer_runas": 1,
+                "desarrollo_fisico": 1,
+                "percepcion": 1
+                }
+        },
+
+  "silvano":{"characteristics":{"strength":0, "agility":10, "constitution":0, "intelligence":0, "intuition":5, "presence":5},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100},
+            "adolescence": {
+                "sin_armadura": 1,
+                "de_filo": 1,
+                "proyectiles": 3,
+                "trepar": 2,
+                "montar": 1,
+                "nadar": 3,
+                "acechar_esconder": 4,
+                "leer_runas": 1,
+                "desarrollo_fisico": 1,
+                "percepcion": 3
+                }
+        },
+
+  "sindar":{"characteristics":{"strength":0, "agility":10, "constitution":5, "intelligence":0, "intuition":5, "presence":10},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100},
+            "adolescence": {
+                "sin_armadura": 1,
+                "de_filo": 1,
+                "proyectiles": 2,
+                "trepar": 1,
+                "montar": 1,
+                "nadar": 2,
+                "acechar_esconder": 3,
+                "leer_runas": 1,
+                "usar_objetos": 1,
+                "desarrollo_fisico": 1,
+                "percepcion": 3
+                }
+        },
+  
+  "noldor":{"characteristics":{"strength":0, "agility":15, "constitution":10, "intelligence":5, "intuition":5, "presence":15},
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
+        }
+}
