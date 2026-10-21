@@ -1,5 +1,5 @@
 from data_loader import read_file
-from dice import dice
+from builder import dice
 
 def profession_select(option:int)-> dict | str:
     table = read_file("src/data/professions.json")

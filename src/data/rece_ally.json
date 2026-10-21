@@ -17,6 +17,11 @@
                 "desactivar_trampas": 1,
                 "desarrollo_fisico": 2,
                 "percepcion": 4
+                },
+        "extra":{
+                "spell_list_probability": 0,
+                "additional_language_degrees": 3,
+                "history_points": 5
                 }
         },
 
@@ -33,6 +38,11 @@
                 "acechar_esconder": 1,
                 "desarrollo_fisico": 2,
                 "percepcion": 1
+                },
+        "extra":{
+                "spell_list_probability": 5,
+                "additional_language_degrees": 3,
+                "history_points": 4
                 }
         },
 
@@ -49,6 +59,11 @@
                 "desactivar_trampas": 1,
                 "desarrollo_fisico": 3,
                 "percepcion": 2
+                },
+        "extra":{
+                "spell_list_probability": 3,
+                "additional_language_degrees": 4,
+                "history_points": 4
                 }
         },
 
@@ -66,7 +81,13 @@
                 "acechar_esconder": 4,
                 "desarrollo_fisico": 3,
                 "percepcion": 1
+                },
+        "extra":{
+                "spell_list_probability": 5,
+                "additional_language_degrees": 2,
+                "history_points": 5
                 }
+                
         },
 
   "half elf":{"characteristics":{"strength":5, "agility":5, "constitution":5, "intelligence":0, "intuition":0, "presence":5},
@@ -84,6 +105,11 @@
                 "leer_runas": 1,
                 "desarrollo_fisico": 1,
                 "percepcion": 1
+                },
+        "extra":{
+                "spell_list_probability": 10,
+                "additional_language_degrees": 4,
+                "history_points": 3
                 }
         },
 
@@ -100,6 +126,11 @@
                 "leer_runas": 1,
                 "desarrollo_fisico": 1,
                 "percepcion": 3
+                },
+        "extra":{
+                "spell_list_probability": 20,
+                "additional_language_degrees": 6,
+                "history_points": 4
                 }
         },
 
@@ -117,10 +148,32 @@
                 "usar_objetos": 1,
                 "desarrollo_fisico": 1,
                 "percepcion": 3
+                },
+        "extra":{
+                "spell_list_probability": 30,
+                "additional_language_degrees": 8,
+                "history_points": 3
                 }
         },
   
   "noldor":{"characteristics":{"strength":0, "agility":15, "constitution":10, "intelligence":5, "intuition":5, "presence":15},
-            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100}
+            "magic_tr":{"ese":0, "can":0, "ve":10, "enf":100},
+            "adolescence": {
+                "sin_armadura": 1,
+                "de_filo": 1,
+                "proyectiles": 1,
+                "montar": 1,
+                "nadar": 2,
+                "acechar_esconder": 2,
+                "leer_runas": 2,
+                "usar_objetos": 1,
+                "desarrollo_fisico": 1,
+                "percepcion": 3
+                },
+        "extra":{
+                "spell_list_probability": 40,
+                "additional_language_degrees": 10,
+                "history_points": 2
+                }
         }
 }

@@ -1,6 +1,6 @@
 import unittest
-from src.character.caracteristics import Caracteristic
-from src.dice import dice
+from character.characteristics import Caracteristic
+from builder import dice
 
 
 

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from caracteristics import Characteristic
+from character.characteristics import Characteristic
 from skills import Skill
 
 @dataclass
@@ -10,7 +10,6 @@ class Character:
     profession:str
     characteristics: dict[str:Characteristic] #Objeto que contiene caracteristicas y reglas
     skills:dict[str:Skill] # Objeto que contiene habilidades y reglas de habilidades
-    magic:None # Objeto que contiene listas y caracteristicas magicas
 
     def from_dict(sheet:dict):
         pass

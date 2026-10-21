@@ -23,6 +23,11 @@
         "leer_runas": 1,
         "usar_objetos": 1,
         "desarrollo_fisico": 3
+        },
+    "extra":{
+        "spell_list_probability": 10,
+        "additional_language_degrees": 6,
+        "history_points": 3
         }
     },
 
@@ -40,6 +45,11 @@
         "nadar": 1,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 3,
+        "additional_language_degrees": 4,
+        "history_points": 5
         }
     },
 
@@ -55,6 +65,11 @@
         "acechar_esconder": 4,
         "desarrollo_fisico": 3,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 3,
+        "additional_language_degrees": 3,
+        "history_points": 5
         }
     },
 
@@ -72,6 +87,11 @@
         "acechar_esconder": 4,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 5,
+        "additional_language_degrees": 2,
+        "history_points": 5
         }
     },
 
@@ -88,6 +108,11 @@
         "montar": 2,
         "nadar": 1,
         "desarrollo_fisico": 1
+        },
+    "extra":{
+        "spell_list_probability": 10,
+        "additional_language_degrees": 5,
+        "history_points": 5
         }
     },
 
@@ -102,6 +127,11 @@
         "acechar_esconder": 4,
         "desarrollo_fisico": 3,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 5,
+        "additional_language_degrees": 1,
+        "history_points": 4
         }
     },
 
@@ -121,6 +151,11 @@
         "acechar_esconder": 1,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 3,
+        "additional_language_degrees": 4,
+        "history_points": 5
         }
     },
 
@@ -135,6 +170,11 @@
         "usar_objetos": 1,
         "desarrollo_fisico": 1,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 15,
+        "additional_language_degrees": 5,
+        "history_points": 5
         }
     },
 
@@ -153,6 +193,11 @@
         "acechar_esconder": 2,
         "desarrollo_fisico": 3,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 2,
+        "additional_language_degrees": 2,
+        "history_points": 4
         }
     },
 
@@ -168,6 +213,11 @@
         "montar": 5,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 2,
+        "additional_language_degrees": 2,
+        "history_points": 4
         }
     },
 
@@ -183,6 +233,11 @@
         "montar": 7,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 2,
+        "additional_language_degrees": 3,
+        "history_points": 5
         }
     },
 
@@ -197,6 +252,11 @@
         "proyectiles": 1,
         "nadar": 5,
         "desarrollo_fisico": 2
+        },
+    "extra":{
+        "spell_list_probability": 5,
+        "additional_language_degrees": 5,
+        "history_points": 5
         }
     },
 
@@ -214,6 +274,11 @@
         "acechar_esconder": 1,
         "desarrollo_fisico": 2,
         "percepcion": 1
+        },
+    "extra":{
+        "spell_list_probability": 5,
+        "additional_language_degrees": 3,
+        "history_points": 4
         }
     },
 
@@ -231,6 +296,11 @@
         "leer_runas": 1,
         "usar_objetos": 1,
         "desarrollo_fisico": 2
+        },
+    "extra":{
+        "spell_list_probability": 10,
+        "additional_language_degrees": 6,
+        "history_points": 3
         }
     }
 }
