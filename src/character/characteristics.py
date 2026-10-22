@@ -1,15 +1,12 @@
 class Characteristic:
-    def __init__(self, roll, race_bonus, table):
+    def __init__(self, roll:int , race_bonus:int, table:list[list[int]]):
         self.stat: int = roll
         self.race_bonus: int = race_bonus
         self.roll_bonus: int = self.roll_bonuses(table)
         self.total_bonus:int = self.sum()
 
-    def roll_bonuses(self, table) -> int:
-        table_roll = table.get("characteristics")
-        if table_roll == None:
-            print("failed")
-        for min, max, bonus in table_roll:
+    def roll_bonuses(self, table:list[list[int]]) -> int:
+        for min, max, bonus in table:
             if min <= self.stat <= max:
                 return bonus
 

@@ -1,4 +1,3 @@
-
 class Skill:
     def __init__(self, name, points, char):
         self.name: str = name
@@ -13,3 +12,6 @@ class Skill:
             return ((self.assigned_points - 10) * 2) + 50
         else:
             return (self.assigned_points - 15) + 60 
+
+    def __repr__(self):
+        return (f"Name: {self.name}\nPoints: {self.assigned_points}\nCharacteristic: {self.characteristic}\nBonus: {self.bonus}")

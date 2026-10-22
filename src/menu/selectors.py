@@ -1,7 +1,7 @@
 from data_loader import read_file
 from builder import dice
 
-def profession_select(option:int)-> dict | str:
+def select_profession(option:int)-> dict | str:
     table = read_file("src/data/professions.json")
     if option == 7:
         option = dice(6)
@@ -21,12 +21,12 @@ def profession_select(option:int)-> dict | str:
         case _:
             return "Select a valid option"
 
-def race_selector(option: int) -> dict | str:
+def select_race(option: int) -> dict | str:
     table = read_file("src/data/races/ally_races.json")
     if option == 10:
-        option = random_race_selector(dice(100), table.get("table"))
+        option = random_race(dice(100), table.get("table"))
         if option == 5:
-            return  human_race_selector(15)
+            return  select_human_race(15)
     match option:
         case 1:
             return table.get("hobbit")
@@ -49,10 +49,10 @@ def race_selector(option: int) -> dict | str:
         case _:
             return "Select a valid option"
 
-def human_race_selector(option:int)->dict | str:
+def select_human_race(option:int)->dict | str:
     table = read_file("src/data/races/human_races.json")
     if option == 15:
-        option = random_race_selector(dice(100), table.get("table"))
+        option = random_race(dice(100), table.get("table"))
     match option:
         case 1:
             return table.get("dunedain")
@@ -85,12 +85,12 @@ def human_race_selector(option:int)->dict | str:
         case _:
             return "Select a valid option"
 
-def random_race_selector(roll:int, table:list)->int:
+def random_race(roll:int, table:list)->int:
     for case in table:
         if case["min"] >= roll >= case["max"]:
             return case["race"]
 
-def alignment_selector(option:int) -> str:
+def select_alignment(option:int) -> str:
     if option == 10:
         option = dice(9)
     match option:

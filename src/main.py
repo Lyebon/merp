@@ -1,5 +1,13 @@
+from builder import builder
 def main():
-    print("Hello there")
+    print("""\
+    Welcome to the MERP character creator
+    Let's start!
+   ==============
+
+   ==============
+""")
+    builder()
 
 
 

@@ -1,13 +1,8 @@
-def welcome_menu() -> None:
-    print("""\
-    Welcome to the MERP character creator
-    Let's start!
+def menu_flow()->None:
+    while True:
+        continue
 
-   ==============
-    Who are you?
-   ==============""")
-
-def profession_menu() -> None:
+def menu_profession() -> None:
     print("""\
         Select your Profession
 
@@ -20,7 +15,7 @@ def profession_menu() -> None:
     7.Random
 """)
 
-def race_menu() -> None:
+def menu_race() -> None:
    print("""\
         Select your race
 
@@ -37,7 +32,7 @@ def race_menu() -> None:
 """)
         
 
-def human_race_menu() -> None:
+def menu_human_race() -> None:
     print("""\
         Select your race
 
@@ -58,7 +53,7 @@ def human_race_menu() -> None:
     15.Random
 """)
 
-def alignment_menu() -> None:
+def menu_alignment() -> None:
     print("""\
         Select your alignment
 
