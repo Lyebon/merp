@@ -1,6 +1,8 @@
+from src.config import LOW_ROLL, HIGH_ROLL
+
 class Characteristic:
     def __init__(self, roll:int , race_bonus:int, table:tuple[tuple[int, int, int],...]):
-        if 1 > roll or roll >102: # 1 y 102 pasan a ser parte del modulo config.py
+        if LOW_ROLL > roll or roll > HIGH_ROLL:
             raise ValueError(f"Invalid roll value: {roll} is out of range")
         self._roll: int = roll
         self._race_bonus: int = race_bonus

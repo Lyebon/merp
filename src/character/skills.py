@@ -1,17 +1,26 @@
-class Skill:
-    def __init__(self, name, points, char):
-        self.name: str = name
-        self.assigned_points: int = points
-        self.characteristic: str = char
-        self.bonus: int = self.bonus_calculator()
+from config import CharName, FIRST_SKILL_RANK, SECOND_SKILL_RANK
 
-    def bonus_calculator(self):
-        if self.assigned_points <= 10:
-            return self.assigned_points * 5
-        elif self.assigned_points <= 15:
-            return ((self.assigned_points - 10) * 2) + 50
+class Skill:
+    def __init__(self, name: str, points: int, char: CharName):
+        self._name: str = name
+        if points < 1:
+            raise ValueError(f"error {name} cannot have zero or negative points {points}")
+        self._ranks: int = points
+        self._characteristic: CharName = char
+
+    def points_bonus(self) -> int:
+        if self._ranks <= FIRST_SKILL_RANK:
+            return self._ranks * 5
+        elif self._ranks <= SECOND_SKILL_RANK:
+            return ((self._ranks - FIRST_SKILL_RANK) * 2) + 50
         else:
-            return (self.assigned_points - 15) + 60 
+            return (self._ranks - SECOND_SKILL_RANK) + 60 
+
+    def add_ranks(self, num: int):
+        if num < 1:
+            raise ValueError(f"error: {num} cannot be zero or negative")
+        self._ranks += num
 
     def __repr__(self):
-        return (f"Name: {self.name}\nPoints: {self.assigned_points}\nCharacteristic: {self.characteristic}\nBonus: {self.bonus}")
+        return (f"Name: {self._name}\nPoints: {self._ranks}\nCharacteristic: {self._characteristic}\n")
+    
