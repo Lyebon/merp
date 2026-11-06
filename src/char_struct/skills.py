@@ -1,4 +1,4 @@
-from config import CharName
+from char_struct.constants import CharName, MAX_SKILL_RANKS
 
 class Skill:
     def __init__(self, name: str, points: int, char: CharName, table: tuple[tuple[int, int]]):
@@ -23,10 +23,9 @@ class Skill:
     def add_ranks(self, num: int):
         if num < 1:
             raise ValueError(f"error: {num} cannot be zero or negative")
-        if num+self._ranks < 999:
+        if num+self._ranks > MAX_SKILL_RANKS:
             raise ValueError(f"error: {num} cannot be greater than 999")
         self._ranks += num
 
     def __repr__(self):
         return (f"Name: {self._name}\nPoints: {self._ranks}\nCharacteristic: {self._characteristic}\n")
-    

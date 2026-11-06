@@ -1,12 +1,12 @@
-from src.config import LOW_ROLL, HIGH_ROLL
+from char_struct.constants import LOW_ROLL, HIGH_ROLL
 
 class Characteristic:
-    def __init__(self, roll:int , race_bonus:int, table:tuple[tuple[int, int, int],...]):
+    def __init__(self, roll:int , race_bonus:int, table:tuple[tuple[int, int, int]]):
         if LOW_ROLL > roll or roll > HIGH_ROLL:
             raise ValueError(f"Invalid roll value: {roll} is out of range")
         self._roll: int = roll
         self._race_bonus: int = race_bonus
-        self._table:tuple[tuple[int, int, int],...] = table
+        self._table:tuple[tuple[int, int, int]] = table
 
     def roll_bonuses(self) -> int:
         for minimum, maximum, bonus in self._table:
