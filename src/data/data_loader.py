@@ -14,7 +14,7 @@ class Manuals:
             file = json.load(f)
             return file
 
-    def bonnuses_search(self, bonus:str) -> tuple[tuple]:
+    def bonuses_search(self, bonus:str) -> tuple[tuple]:
         rules = self._bonuses.get(bonus)
         copy_rules = deepcopy(rules)
         if rules is not None:

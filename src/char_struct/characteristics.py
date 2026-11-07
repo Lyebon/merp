@@ -1,4 +1,4 @@
-from char_struct.constants import LOW_ROLL, HIGH_ROLL
+from src.char_struct.constants import LOW_ROLL, HIGH_ROLL
 
 class Characteristic:
     def __init__(self, roll:int , race_bonus:int, table:tuple[tuple[int, int, int]]):

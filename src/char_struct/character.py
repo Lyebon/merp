@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from characteristics import Characteristic
-from skills import Skill
-from validator import CharName
+from src.char_struct.characteristics import Characteristic
+from src.char_struct.skills import Skill
+from src.char_struct.validator import CharName
 
 @dataclass
 class Character:

@@ -1,4 +1,5 @@
-from char_struct.constants import CharName, MAX_SKILL_RANKS
+from src.char_struct.constants import MAX_SKILL_RANKS
+from src.char_struct.validator import CharName
 
 class Skill:
     def __init__(self, name: str, points: int, char: CharName, table: tuple[tuple[int, int]]):

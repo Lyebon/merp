@@ -5,7 +5,7 @@ class CharName(Enum):
     AGILITY = "agility"
     CONSTITUTION = "constitution"
     INTELLIGENCE = "intelligence"
-    INTITUTION = "intuition"
+    INTUITION = "intuition"
     PRESENCE = "presence"
 
 
