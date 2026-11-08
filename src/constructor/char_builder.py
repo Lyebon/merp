@@ -4,29 +4,43 @@ from src.char_struct.skills import Skill
 from src.char_struct.validator import CharName, RaceAlly, RaceHuman
 from src.data.data_loader import Manuals
 
-def builder(info:dict[str, str|int])->Character:
-    try:
-        manual = Manuals()
-        race_info = info.get("race")
-        profession = info.get("profession")
-        character_race = race_creator(race_info)
-        race_bonus = character_race.get("characteristics")
-        if race_bonus is None:
-            raise ValueError("The table for characteristis of the race is missing")
-        characteristic_info = info.get("characteristics")
-        character_characteristic = characteristics_creator(characteristic_info, race_bonus, manual)
-    except:
-        print("Character not created")
+#info son las respuestas del usuario
+def builder(pc_info:dict[str, str|int], manual: Manuals)->Character:
+    race_info = pc_info.get("race")
+    profession = pc_info.get("profession")
+
+    character_race = race_creator(race_info, manual)
+
+    race_char_bonus = character_race.get("characteristics")
+    race_adolescence = character_race.get("adolescence")
+    if race_char_bonus is None or race_adolescence is None:
+        return
+
+    profession_property = profession_creator(profession, manual)
+    
+    characteristic_info = pc_info.get("characteristics")
+    character_characteristic = characteristics_creator(characteristic_info, race_char_bonus, manual)
+
+    
 
 
-def race_creator(race:RaceAlly|RaceHuman)->dict[str,dict]:
+#devuelve un diccionario con las partes de la raza
+#caracteristicas:{fuerza:5...}... asi
+def race_creator(race:str, manual:Manuals)->dict[str,dict]:
     if race in RaceAlly:
-        race_manual = Manuals.race_ally_search(race)
+        race_manual = manual.manual_races()
     elif race in RaceHuman:
-        race_manual = Manuals.race_human_search(race)
+        race_manual = manual.manual_humans_races()
     else:
         raise ValueError("The {race} race selected are not a valid race")
-    return race_manual
+    return race_manual.get(race)
+
+def profession_creator(profession:str, manual:Manuals)->dict[str,dict]:
+    profession_manual = manual.manual_professions()
+    pc_profession = profession_manual.get(profession)
+    if pc_profession is None:
+        return
+    return pc_profession
 
 
 def characteristics_creator(characteristic_list:dict[CharName,int],

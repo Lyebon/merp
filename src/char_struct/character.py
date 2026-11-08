@@ -7,7 +7,7 @@ from src.char_struct.validator import CharName
 class Character:
     id: int
     name: str
-    #description:dict[str,str] # edad, motivacion, alineamiento, etc
+    description:dict[str,str] # edad, motivacion, alineamiento, etc
     race:str
     profession:str
     characteristics: dict[CharName,Characteristic] #Objeto que contiene caracteristicas y reglas
